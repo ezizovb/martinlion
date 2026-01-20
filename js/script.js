@@ -1,6 +1,6 @@
 // Инициализация EmailJS (замените на свои данные)
 // Раскомментируйте и замените на ваш публичный ключ EmailJS:
-// emailjs.init("YOUR_PUBLIC_KEY");
+emailjs.init("8fzgorCZriaixUv9X");
 
 // Данные
 let products = [];
@@ -60,7 +60,7 @@ function filterByBrand(brandName) {
   const filtered = products.filter(
     (product) =>
       product.brand.toLowerCase() === brandName.toLowerCase() &&
-      (currentCategory === "all" || product.category === currentCategory)
+      (currentCategory === "all" || product.category === currentCategory),
   );
   filteredProducts = filtered;
   renderProducts(filtered, true);
@@ -87,7 +87,7 @@ function renderProducts(productsToRender, reset = false) {
   // Показываем товары порциями
   const productsToShow = productsToRender.slice(
     currentDisplayed,
-    currentDisplayed + displayedProducts
+    currentDisplayed + displayedProducts,
   );
 
   productsToShow.forEach((product) => {
@@ -199,7 +199,7 @@ function filterByCategory(category) {
     filtered = filtered.filter(
       (product) =>
         product.name.toLowerCase().includes(currentSearch) ||
-        product.description.toLowerCase().includes(currentSearch)
+        product.description.toLowerCase().includes(currentSearch),
     );
   }
 
@@ -216,7 +216,7 @@ function handleSearch() {
 
   if (currentCategory !== "all") {
     filtered = filtered.filter(
-      (product) => product.category === currentCategory
+      (product) => product.category === currentCategory,
     );
   }
 
@@ -225,7 +225,7 @@ function handleSearch() {
       (product) =>
         product.name.toLowerCase().includes(currentSearch) ||
         product.description.toLowerCase().includes(currentSearch) ||
-        product.brand.toLowerCase().includes(currentSearch)
+        product.brand.toLowerCase().includes(currentSearch),
     );
   }
 
@@ -274,20 +274,19 @@ async function submitOrder(event) {
   try {
     // Замените на ваши данные EmailJS
     // Раскомментируйте и настройте после регистрации на emailjs.com:
-    /*
-        await emailjs.send(
-            'YOUR_SERVICE_ID',    // Замените на ваш Service ID
-            'YOUR_TEMPLATE_ID',  // Замените на ваш Template ID
-            {
-                product_id: formData.productId,
-                product_name: product ? product.name : 'Неизвестный товар',
-                customer_name: formData.customerName,
-                customer_email: formData.customerEmail,
-                customer_phone: formData.customerPhone,
-                message: `Новый заказ: ${product ? product.name : 'Неизвестный товар'} (ID: ${formData.productId})`
-            }
-        );
-        */
+
+    await emailjs.send(
+      "service_6y8s7nk", // Замените на ваш Service ID
+      "template_ot4mi4f", // Замените на ваш Template ID
+      {
+        product_id: formData.productId,
+        product_name: product ? product.name : "Неизвестный товар",
+        customer_name: formData.customerName,
+        customer_email: formData.customerEmail,
+        customer_phone: formData.customerPhone,
+        message: `Новый заказ: ${product ? product.name : "Неизвестный товар"} (ID: ${formData.productId})`,
+      },
+    );
 
     // Временная заглушка для тестирования (удалите после настройки EmailJS)
     console.log("Заказ:", {
@@ -303,7 +302,7 @@ async function submitOrder(event) {
   } catch (error) {
     console.error("Ошибка отправки:", error);
     alert(
-      "Произошла ошибка при отправке заказа. Пожалуйста, попробуйте позже или свяжитесь с нами напрямую."
+      "Произошла ошибка при отправке заказа. Пожалуйста, попробуйте позже или свяжитесь с нами напрямую.",
     );
   }
 }
