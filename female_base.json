@@ -1,0 +1,190 @@
+[
+    {
+    "id": "F86",
+    "name": "By Kilian Good Girl Gone Bad",
+    "brand": "By Kilian",
+    "category": "female",
+    "description": "Citrus - Green | Rose, Osmanthus, Jasmine",
+    "image": "./images/"
+  },
+  {
+    "id": "F87",
+    "name": "Mancera Roses Vanille",
+    "brand": "Mancera",
+    "category": "female",
+    "description": "Fruity | Water, Lemon, Rose",
+    "image": "./images/"
+  },
+  {
+    "id": "F88",
+    "name": "Xerjoff Casamorati Lira",
+    "brand": "Xerjoff",
+    "category": "female",
+    "description": "Sweet - Citrus | Bergamot, Orange",
+    "image": "./images/"
+  },
+  {
+    "id": "F89",
+    "name": "Montale Roses Musk",
+    "brand": "Montale",
+    "category": "female",
+    "description": "Citrus - Fruity | Rose, Citrus, Berry",
+    "image": "./images/"
+  },
+  {
+    "id": "F90",
+    "name": "Yves Saint Laurent Libre",
+    "brand": "Yves Saint Laurent",
+    "category": "female",
+    "description": "Citrus - Green | Mandarine, Orange",
+    "image": "./images/"
+  },
+
+  {
+    "id": "F91",
+    "name": "Giorgio Armani My Way",
+    "brand": "Giorgio Armani",
+    "category": "female",
+    "description": "White Flower - Citrus | Orange Blossom, Bergamot, Pear",
+    "image": "./images/"
+  },
+  {
+    "id": "F92",
+    "name": "Versace Crystal Noir",
+    "brand": "Versace",
+    "category": "female",
+    "description": "Fruity | Grapefruit, Cherry, Coconut",
+    "image": "./images/"
+  },
+  {
+    "id": "F93",
+    "name": "Byredo Blanche",
+    "brand": "Byredo",
+    "category": "female",
+    "description": "Citrus - Spicy | Lemon, Pink Pepper, Aldehydic Notes",
+    "image": "./images/"
+  },
+  {
+    "id": "F94",
+    "name": "Lancôme Idôle Le Parfum",
+    "brand": "Lancôme",
+    "category": "female",
+    "description": "Citrus - Fruity | Lemon, Pear, Pink Pepper",
+    "image": "./images/"
+  },
+  {
+    "id": "F95",
+    "name": "YSL Black Opium",
+    "brand": "YSL",
+    "category": "female",
+    "description": "Citrus - Spicy | Lemon, Black Pepper",
+    "image": "./images/"
+  },
+
+  {
+    "id": "F96",
+    "name": "Balenciaga Florabotanica",
+    "brand": "Balenciaga",
+    "category": "female",
+    "description": "Green - Spicy | Green Notes, Pink Pepper, Grapefruit, Spearmint",
+    "image": "./images/"
+  },
+  {
+    "id": "F97",
+    "name": "Parfums De Marly Delina",
+    "brand": "Parfums De Marly",
+    "category": "female",
+    "description": "Citrus - Spicy | Lemon, Pink Pepper",
+    "image": "./images/"
+  },
+  {
+    "id": "F98",
+    "name": "Bvlgari Omnia Coral",
+    "brand": "Bvlgari",
+    "category": "female",
+    "description": "Citrus - Fruity | Bergamot, Raspberry, Apple",
+    "image": "./images/"
+  },
+  {
+    "id": "F99",
+    "name": "Thierry Mugler Angel",
+    "brand": "Thierry Mugler",
+    "category": "female",
+    "description": "Citrus | Bergamot, Mandarin",
+    "image": "./images/"
+  },
+  {
+    "id": "F100",
+    "name": "Valentino Donna Born In Roma",
+    "brand": "Valentino",
+    "category": "female",
+    "description": "Citrus - Spicy | Bergamot, Pepper, Blackcurrant",
+    "image": "./images/"
+  },
+
+  {
+    "id": "F101",
+    "name": "Dolce & Gabbana Q",
+    "brand": "Dolce & Gabbana",
+    "category": "female",
+    "description": "Citrus - Fruity | Sicilian Lemon, Blood Orange, Cherry, Fruity Notes",
+    "image": "./images/"
+  },
+  {
+    "id": "F102",
+    "name": "Prada Paradoxe",
+    "brand": "Prada",
+    "category": "female",
+    "description": "Citrus - Fruity | Pear, Blackcurrant, Lemon, Mandarin",
+    "image": "./images/"
+  },
+  {
+    "id": "F103",
+    "name": "Paco Rabanne Fame",
+    "brand": "Paco Rabanne",
+    "category": "female",
+    "description": "Fruity | Bergamot, Tropical, Cassis",
+    "image": "./images/"
+  },
+  {
+    "id": "F104",
+    "name": "Yves Saint Laurent Libre Intense",
+    "brand": "Yves Saint Laurent",
+    "category": "female",
+    "description": "Citrus - Fruity | Bergamot, Mandarin, Blackcurrant",
+    "image": "./images/"
+  },
+  {
+    "id": "F105",
+    "name": "Jean Paul Gaultier Scandal Absolu",
+    "brand": "Jean Paul Gaultier",
+    "category": "female",
+    "description": "Flowers - Fruity | Tuberose, White Flowers, Fruity",
+    "image": "./images/"
+  },
+  
+  {
+    "id": "F106",
+    "name": "Jean Paul Gaultier La Belle",
+    "brand": "Jean Paul Gaultier",
+    "category": "female",
+    "description": "Citrus - Spicy | Lemon, Pink Pepper",
+    "image": "./images/"
+  },
+  {
+    "id": "F107",
+    "name": "Gucci Flora Gorgeous Magnolia",
+    "brand": "Gucci",
+    "category": "female",
+    "description": "Citrus - Fruity | Orange, Blackcurrant",
+    "image": "./images/"
+  },
+  {
+    "id": "F108",
+    "name": "Yves Saint Laurent Black Opium Over Red",
+    "brand": "Yves Saint Laurent",
+    "category": "female",
+    "description": "Fruity - Green | Cherry, Green, Mandarine",
+    "image": "./images/"
+  }
+]

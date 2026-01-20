@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="K417">
+    <title>Martin Lion</title>
+    <link rel="icon" type="image/png" href="./icons/logo.png">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img class="logo_img" src="./icons/logo.png" alt="logo">
+                    <h1>Martin Lion</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#about" class="nav-link">О нас</a>
+                    <a href="#catalog" class="nav-link">Каталоги</a>
+                </nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mobile-nav-link">О нас</a>
+        <a href="#catalog" class="mobile-nav-link">Каталоги</a>
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="banner-slider" id="bannerSlider">
+            <div class="banner-slide active">
+                <!-- Banner 1 -->
+                <img src="images/banner3.jpg" alt="Изысканные ароматы">
+                <div class="banner-content">
+                    <h2>Изысканные ароматы для вас</h2>
+                    <p>Откройте мир премиальной парфюмерии</p>
+                </div>
+            </div>
+            <div class="banner-slide">
+                <!-- Banner 2 -->
+                <img src="images/banner2.jpg" alt="Уникальные композиции">
+                <div class="banner-content">
+                    <h2>Уникальные композиции</h2>
+                    <p>Каждый аромат рассказывает свою историю</p>
+                </div>
+            </div>
+            <div class="banner-slide">
+                <!-- Banner 3 -->
+                <img src="images/banner1.jpg" alt="Премиальное качество">
+                <div class="banner-content">
+                    <h2>Премиальное качество</h2>
+                    <p>Только оригинальная продукция от ведущих брендов</p>
+                </div>
+            </div>
+        </div>
+        <div class="banner-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+        </div>
+        <div class="container">
+            <div class="about-text">
+                <p>Мы предлагаем широкий ассортимент премиальной парфюмерии от ведущих мировых брендов. Наша коллекция включает как классические, так и современные ароматы для мужчин, женщин и унисекс варианты. Каждый продукт проходит тщательную проверку на подлинность, чтобы гарантировать вам только оригинальное качество.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog-section" id="catalog">
+        <div class="container">
+            <h2 class="section-title">Каталог</h2>
+            
+            <!-- Search -->
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Поиск по названию товара...">
+            </div>
+
+            <!-- Filters Accordion -->
+            <div class="filters-container">
+                <div class="accordion">
+                    <button class="accordion-btn" id="filterBtn">
+                        <span>Фильтры по категориям</span>
+                        <span class="accordion-icon">▼</span>
+                    </button>
+                    <div class="accordion-content" id="filterContent">
+                        <div class="filter-options">
+                            <button class="filter-btn active" data-category="all">Все</button>
+                            <button class="filter-btn" data-category="male">Мужской</button>
+                            <button class="filter-btn" data-category="female">Женский</button>
+                            <button class="filter-btn" data-category="unisex">Унисекс</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brands -->
+            <div class="brands-container">
+                <h3 class="brands-title">Популярные бренды</h3>
+                <div class="brands-grid" id="brandsGrid">
+                    <!-- Brands will be loaded from JSON -->
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded from JSON -->
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <p>Товары не найдены</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Modal -->
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <h3>Оформление заказа</h3>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="customerName">Ваше имя</label>
+                    <input type="text" id="customerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="customerEmail">Email</label>
+                    <input type="email" id="customerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="customerPhone">Телефон</label>
+                    <input type="tel" id="customerPhone" required>
+                </div>
+                <input type="hidden" id="productId" name="productId">
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Отправить заказ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>Email: <a href="mailto:info@perfume-premium.ru">info@perfume-premium.ru</a></p>
+                    <p>Телефон: <a href="tel:+99312345678">+99312345678</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Адрес</h4>
+                    <p>г Ашхгабад ул ____ д__</p>
+                    <p>Режим работы: Пн-Вс 10:00 - 22:00</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Социальные сети</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <img class="soc_ico" src="./icons/instgagram.png" alt="instagram">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img class="soc_ico" src="./icons/telegram.png" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Martin Lion. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
