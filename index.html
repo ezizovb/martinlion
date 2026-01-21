@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
+
 <body>
     <!-- Header -->
     <header class="header" id="header">
@@ -20,6 +22,7 @@
                 </div>
                 <nav class="nav">
                     <a href="#about" class="nav-link">О нас</a>
+                    <a href="#how-to-order" class="nav-link">Как заказать</a>
                     <a href="#catalog" class="nav-link">Каталоги</a>
                 </nav>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
@@ -34,6 +37,7 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <a href="#about" class="mobile-nav-link">О нас</a>
+        <a href="#how-to-order" class="mobile-nav-link">Как заказать</a>
         <a href="#catalog" class="mobile-nav-link">Каталоги</a>
     </div>
 
@@ -72,7 +76,38 @@
         </div>
         <div class="container">
             <div class="about-text">
-                <p>Мы предлагаем широкий ассортимент премиальной парфюмерии от ведущих мировых брендов. Наша коллекция включает как классические, так и современные ароматы для мужчин, женщин и унисекс варианты. Каждый продукт проходит тщательную проверку на подлинность, чтобы гарантировать вам только оригинальное качество.</p>
+                <p>Мы предлагаем широкий ассортимент премиальной парфюмерии от ведущих мировых брендов. Наша коллекция
+                    включает как классические, так и современные ароматы для мужчин, женщин и унисекс варианты. Каждый
+                    продукт проходит тщательную проверку на подлинность, чтобы гарантировать вам только оригинальное
+                    качество.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Order Section -->
+    <section class="how-to-order-section" id="how-to-order">
+        <div class="container">
+            <h2 class="section-title">Как заказать</h2>
+            <div class="how-to-order-content">
+                <div class="how-to-order-image">
+                    <img src="images/howtoorder.png" alt="Как заказать">
+                </div>
+                <div class="how-to-order-text">
+                    <h3>Всего три простых шага к покупке:</h3>
+                    <ol class="order-steps">
+                        <li>
+                            <strong>Нажмите «Заказать»</strong> на понравившемся товаре.
+                        </li>
+                        <li>
+                            <strong>Оставьте контакты.</strong> В появившемся окне введите имя, почту и телефон. Мы
+                            гарантируем конфиденциальность ваших данных.
+                        </li>
+                        <li>
+                            <strong>Мы на связи!</strong> Наш сотрудник перезвонит или напишет вам, чтобы подтвердить
+                            заказ и ответить на вопросы.
+                        </li>
+                    </ol>
+                </div>
             </div>
         </div>
     </section>
@@ -81,7 +116,7 @@
     <section class="catalog-section" id="catalog">
         <div class="container">
             <h2 class="section-title">Каталог</h2>
-            
+
             <!-- Search -->
             <div class="search-container">
                 <input type="text" id="searchInput" class="search-input" placeholder="Поиск по названию товара...">
@@ -185,5 +220,5 @@
 
     <script src="./js/script.js"></script>
 </body>
-</html>
 
+</html>
