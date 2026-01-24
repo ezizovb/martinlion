@@ -70,6 +70,42 @@ body {
     color: var(--accent-color);
 }
 
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.lang-switcher {
+    background: none;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 50px;
+}
+
+.lang-switcher:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.mobile-header-actions {
+    display: none;
+    align-items: center;
+    gap: 15px;
+}
+
+.mobile-lang-switcher {
+    display: none;
+}
+
 .nav {
     display: flex;
     gap: 30px;
@@ -141,7 +177,8 @@ body {
     /* 1. Делаем цвет полупрозрачным (белый или темный, зависит от темы) */
     background-color: rgba(255, 255, 255, 0.7);
     /* 2. Эффект размытия заднего плана */
-    -webkit-backdrop-filter: blur(10px); /* Для поддержки Safari */
+    -webkit-backdrop-filter: blur(10px);
+    /* Для поддержки Safari */
     backdrop-filter: blur(5px);
     /* 3. Тонкая светлая граница для эффекта грани стекла */
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -175,7 +212,8 @@ body {
     border-bottom: 1px solid var(--border-color);
     font-weight: 500;
 }
-.mobile-nav-link:last-child{
+
+.mobile-nav-link:last-child {
     border-bottom: none;
 }
 
@@ -727,6 +765,18 @@ body {
     box-shadow: 0 0 0 3px rgba(74, 123, 167, 0.1);
 }
 
+.form-success-message {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 6px;
+    color: #155724;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 .submit-btn {
     width: 100%;
     padding: 14px 20px;
@@ -822,6 +872,18 @@ body {
         display: none;
     }
 
+    .header-actions {
+        display: none;
+    }
+
+    .mobile-header-actions {
+        display: flex;
+    }
+
+    .mobile-lang-switcher {
+        display: block;
+    }
+
     .mobile-menu-btn {
         display: flex;
     }
@@ -899,17 +961,17 @@ body {
 
 @media (max-width: 480px) {
     .logo_img {
-    width: 40px;
-    height: 100%;
-    margin-right: 6px;
-}
+        width: 40px;
+        height: 100%;
+        margin-right: 6px;
+    }
 
-.logo h1 {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 400;
-}
+    .logo h1 {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 400;
+    }
 
     .logo h1 {
         font-size: 18px;

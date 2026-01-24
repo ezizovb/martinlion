@@ -21,24 +21,30 @@
                     <h1>Martin Lion</h1>
                 </div>
                 <nav class="nav">
-                    <a href="#about" class="nav-link">О нас</a>
-                    <a href="#how-to-order" class="nav-link">Как заказать</a>
-                    <a href="#catalog" class="nav-link">Каталоги</a>
+                    <a href="#about" class="nav-link" data-i18n="nav.about">О нас</a>
+                    <a href="#how-to-order" class="nav-link" data-i18n="nav.howToOrder">Как заказать</a>
+                    <a href="#catalog" class="nav-link" data-i18n="nav.catalog">Каталоги</a>
                 </nav>
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                <div class="header-actions">
+                    <button class="lang-switcher" id="langSwitcher">EN</button>
+                </div>
+                <div class="mobile-header-actions">
+                    <button class="lang-switcher mobile-lang-switcher" id="mobileLangSwitcher">EN</button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
 
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
-        <a href="#about" class="mobile-nav-link">О нас</a>
-        <a href="#how-to-order" class="mobile-nav-link">Как заказать</a>
-        <a href="#catalog" class="mobile-nav-link">Каталоги</a>
+        <a href="#about" class="mobile-nav-link" data-i18n="nav.about">О нас</a>
+        <a href="#how-to-order" class="mobile-nav-link" data-i18n="nav.howToOrder">Как заказать</a>
+        <a href="#catalog" class="mobile-nav-link" data-i18n="nav.catalog">Каталоги</a>
     </div>
 
     <!-- About Section -->
@@ -48,24 +54,24 @@
                 <!-- Banner 1 -->
                 <img src="images/banner3.jpg" alt="Изысканные ароматы">
                 <div class="banner-content">
-                    <h2>Изысканные ароматы для вас</h2>
-                    <p>Откройте мир премиальной парфюмерии</p>
+                    <h2 data-i18n="banner.title1">Изысканные ароматы для вас</h2>
+                    <p data-i18n="banner.text1">Откройте мир премиальной парфюмерии</p>
                 </div>
             </div>
             <div class="banner-slide">
                 <!-- Banner 2 -->
                 <img src="images/banner2.jpg" alt="Уникальные композиции">
                 <div class="banner-content">
-                    <h2>Уникальные композиции</h2>
-                    <p>Каждый аромат рассказывает свою историю</p>
+                    <h2 data-i18n="banner.title2">Уникальные композиции</h2>
+                    <p data-i18n="banner.text2">Каждый аромат рассказывает свою историю</p>
                 </div>
             </div>
             <div class="banner-slide">
                 <!-- Banner 3 -->
                 <img src="images/banner1.jpg" alt="Премиальное качество">
                 <div class="banner-content">
-                    <h2>Премиальное качество</h2>
-                    <p>Только оригинальная продукция от ведущих брендов</p>
+                    <h2 data-i18n="banner.title3">Премиальное качество</h2>
+                    <p data-i18n="banner.text3">Только оригинальная продукция от ведущих брендов</p>
                 </div>
             </div>
         </div>
@@ -76,7 +82,8 @@
         </div>
         <div class="container">
             <div class="about-text">
-                <p>Мы предлагаем широкий ассортимент премиальной парфюмерии от ведущих мировых брендов. Наша коллекция
+                <p data-i18n="about.text">Мы предлагаем широкий ассортимент премиальной парфюмерии от ведущих мировых
+                    брендов. Наша коллекция
                     включает как классические, так и современные ароматы для мужчин, женщин и унисекс варианты. Каждый
                     продукт проходит тщательную проверку на подлинность, чтобы гарантировать вам только оригинальное
                     качество.</p>
@@ -87,24 +94,28 @@
     <!-- How to Order Section -->
     <section class="how-to-order-section" id="how-to-order">
         <div class="container">
-            <h2 class="section-title">Как заказать</h2>
+            <h2 class="section-title" data-i18n="howToOrder.title">Как заказать</h2>
             <div class="how-to-order-content">
                 <div class="how-to-order-image">
                     <img src="images/howtoorder.png" alt="Как заказать">
                 </div>
                 <div class="how-to-order-text">
-                    <h3>Всего три простых шага к покупке:</h3>
+                    <h3 data-i18n="howToOrder.subtitle">Всего три простых шага к покупке:</h3>
                     <ol class="order-steps">
                         <li>
-                            <strong>Нажмите «Заказать»</strong> на понравившемся товаре.
+                            <strong data-i18n="howToOrder.step1.title">Нажмите «Заказать»</strong> <span
+                                data-i18n="howToOrder.step1.text">на понравившемся товаре.</span>
                         </li>
                         <li>
-                            <strong>Оставьте контакты.</strong> В появившемся окне введите имя, почту и телефон. Мы
-                            гарантируем конфиденциальность ваших данных.
+                            <strong data-i18n="howToOrder.step2.title">Оставьте контакты.</strong> <span
+                                data-i18n="howToOrder.step2.text">В появившемся окне введите имя и телефон. Мы
+                                гарантируем конфиденциальность ваших данных.</span>
                         </li>
                         <li>
-                            <strong>Мы на связи!</strong> Наш сотрудник перезвонит или напишет вам, чтобы подтвердить
-                            заказ и ответить на вопросы.
+                            <strong data-i18n="howToOrder.step3.title">Мы на связи!</strong> <span
+                                data-i18n="howToOrder.step3.text">Наш сотрудник перезвонит или напишет вам, чтобы
+                                подтвердить
+                                заказ и ответить на вопросы.</span>
                         </li>
                     </ol>
                 </div>
@@ -115,26 +126,29 @@
     <!-- Catalog Section -->
     <section class="catalog-section" id="catalog">
         <div class="container">
-            <h2 class="section-title">Каталог</h2>
+            <h2 class="section-title" data-i18n="catalog.title">Каталог</h2>
 
             <!-- Search -->
             <div class="search-container">
-                <input type="text" id="searchInput" class="search-input" placeholder="Поиск по названию товара...">
+                <input type="text" id="searchInput" class="search-input"
+                    data-i18n-placeholder="catalog.searchPlaceholder" placeholder="Поиск по названию товара...">
             </div>
 
             <!-- Filters Accordion -->
             <div class="filters-container">
                 <div class="accordion">
                     <button class="accordion-btn" id="filterBtn">
-                        <span>Фильтры по категориям</span>
+                        <span data-i18n="catalog.filters">Фильтры по категориям</span>
                         <span class="accordion-icon">▼</span>
                     </button>
                     <div class="accordion-content" id="filterContent">
                         <div class="filter-options">
-                            <button class="filter-btn active" data-category="all">Все</button>
-                            <button class="filter-btn" data-category="male">Мужской</button>
-                            <button class="filter-btn" data-category="female">Женский</button>
-                            <button class="filter-btn" data-category="unisex">Унисекс</button>
+                            <button class="filter-btn active" data-category="all" data-i18n="catalog.all">Все</button>
+                            <button class="filter-btn" data-category="male" data-i18n="catalog.male">Мужской</button>
+                            <button class="filter-btn" data-category="female"
+                                data-i18n="catalog.female">Женский</button>
+                            <button class="filter-btn" data-category="unisex"
+                                data-i18n="catalog.unisex">Унисекс</button>
                         </div>
                     </div>
                 </div>
@@ -142,7 +156,7 @@
 
             <!-- Brands -->
             <div class="brands-container">
-                <h3 class="brands-title">Популярные бренды</h3>
+                <h3 class="brands-title" data-i18n="catalog.popularBrands">Популярные бренды</h3>
                 <div class="brands-grid" id="brandsGrid">
                     <!-- Brands will be loaded from JSON -->
                 </div>
@@ -155,7 +169,7 @@
 
             <!-- Empty State -->
             <div class="empty-state" id="emptyState" style="display: none;">
-                <p>Товары не найдены</p>
+                <p data-i18n="catalog.noProducts">Товары не найдены</p>
             </div>
         </div>
     </section>
@@ -164,23 +178,22 @@
     <div class="modal" id="orderModal">
         <div class="modal-content">
             <span class="modal-close" id="modalClose">&times;</span>
-            <h3>Оформление заказа</h3>
+            <h3 data-i18n="order.title">Оформление заказа</h3>
             <form id="orderForm">
                 <div class="form-group">
-                    <label for="customerName">Ваше имя</label>
+                    <label for="customerName" data-i18n="order.name">Ваше имя</label>
                     <input type="text" id="customerName" required>
                 </div>
                 <div class="form-group">
-                    <label for="customerEmail">Email</label>
-                    <input type="email" id="customerEmail" required>
-                </div>
-                <div class="form-group">
-                    <label for="customerPhone">Телефон</label>
+                    <label for="customerPhone" data-i18n="order.phone">Телефон</label>
                     <input type="tel" id="customerPhone" required>
                 </div>
                 <input type="hidden" id="productId" name="productId">
                 <div class="form-group">
-                    <button type="submit" class="submit-btn">Отправить заказ</button>
+                    <button type="submit" class="submit-btn" data-i18n="order.submit">Отправить заказ</button>
+                </div>
+                <div class="form-success-message" id="successMessage" style="display: none;">
+                    <p data-i18n="order.success">Спасибо за заказ, наш сотрудник свяжеться с вами в ближайший момент</p>
                 </div>
             </form>
         </div>
@@ -191,17 +204,17 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Контакты</h4>
+                    <h4 data-i18n="footer.contacts">Контакты</h4>
                     <p>Email: <a href="mailto:info@perfume-premium.ru">info@perfume-premium.ru</a></p>
-                    <p>Телефон: <a href="tel:+99312345678">+99312345678</a></p>
+                    <p data-i18n="footer.phone">Телефон: <a href="tel:+99312345678">+99312345678</a></p>
                 </div>
                 <div class="footer-section">
-                    <h4>Адрес</h4>
+                    <h4 data-i18n="footer.address">Адрес</h4>
                     <p>г Ашхгабад ул ____ д__</p>
-                    <p>Режим работы: Пн-Вс 10:00 - 22:00</p>
+                    <p data-i18n="footer.workingHours">Режим работы: Пн-Вс 10:00 - 22:00</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Социальные сети</h4>
+                    <h4 data-i18n="footer.social">Социальные сети</h4>
                     <div class="social-links">
                         <a href="#" class="social-link">
                             <img class="soc_ico" src="./icons/instgagram.png" alt="instagram">
@@ -216,7 +229,8 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <span id="current-year"></span> Martin Lion. Все права защищены.</p>
+                <p>&copy; <span id="current-year"></span> Martin Lion. <span data-i18n="footer.rights">Все права
+                        защищены.</span></p>
             </div>
         </div>
     </footer>
