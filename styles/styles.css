@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Montserrat-Variable';
+  src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 /* Reset & Base Styles */
 * {
     margin: 0;
@@ -70,6 +77,13 @@ body {
     color: var(--accent-color);
 }
 
+.brand{
+    font-family: Montserrat-Variable, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-actions {
     display: flex;
     align-items: center;
@@ -112,6 +126,7 @@ body {
 }
 
 .nav-link {
+    font-family: Montserrat-Variable, sans-serif;
     text-decoration: none;
     color: var(--text-dark);
     font-weight: 500;
@@ -225,6 +240,10 @@ body {
 .about-section {
     padding: 0px 0px 60px 0;
     background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+}
+
+.banner{
+        font-family: Montserrat-Variable, sans-serif;
 }
 
 .banner-slider {
@@ -417,6 +436,7 @@ body {
 }
 
 .section-title {
+    font-family: Montserrat-Variable, sans-serif;
     font-size: 36px;
     font-weight: 700;
     text-align: center;
@@ -930,11 +950,21 @@ body {
 }
 
 .footer-bottom {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
     padding-top: 20px;
     border-top: 1px solid var(--border-color);
     color: var(--text-light);
     font-size: 14px;
+}
+.author {
+    margin-left: auto;
+}
+.author a{
+    color: var(--accent-color);
+    font-weight: 200;
+    font-size: small;
 }
 
 /* Responsive Design */
