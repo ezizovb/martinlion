@@ -26,10 +26,10 @@
                     <a href="#catalog" class="nav-link" data-i18n="nav.catalog">Каталоги</a>
                 </nav>
                 <div class="header-actions">
-                    <button class="lang-switcher" id="langSwitcher">EN</button>
+                    <button class="lang-switcher" id="langSwitcher">TM</button>
                 </div>
                 <div class="mobile-header-actions">
-                    <button class="lang-switcher mobile-lang-switcher" id="mobileLangSwitcher">EN</button>
+                    <button class="lang-switcher mobile-lang-switcher" id="mobileLangSwitcher">TM</button>
                     <button class="mobile-menu-btn" id="mobileMenuBtn">
                         <span></span>
                         <span></span>
@@ -178,24 +178,42 @@
     <div class="modal" id="orderModal">
         <div class="modal-content">
             <span class="modal-close" id="modalClose">&times;</span>
-            <h3 data-i18n="order.title">Оформление заказа</h3>
-            <form id="orderForm">
-                <div class="form-group">
-                    <label for="customerName" data-i18n="order.name">Ваше имя</label>
-                    <input type="text" id="customerName" required>
+
+            <h3 class="order-modal-title" data-i18n="order.title">Оформление заказа</h3>
+
+            <div class="order-modal-layout">
+                <div class="order-modal-product">
+                    <div class="order-modal-image-wrapper">
+                        <img id="orderProductImage" src="" alt="Товар" class="order-modal-image">
+                        <div class="order-modal-volume">50 мл</div>
+                    </div>
+                    <div class="order-modal-description">
+                        <p>
+                            Любимый аромат в новом исполнении. Мастерски воссозданная композиция, вдохновленная
+                            <span class="order-modal-product-name" id="orderProductName">[тут имя товара]</span>.
+                            Идентичные ноты, безупречная стойкость.
+                        </p>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="customerPhone" data-i18n="order.phone">Телефон</label>
-                    <input type="tel" id="customerPhone" required>
-                </div>
-                <input type="hidden" id="productId" name="productId">
-                <div class="form-group">
-                    <button type="submit" class="submit-btn" data-i18n="order.submit">Отправить заказ</button>
-                </div>
-                <div class="form-success-message" id="successMessage" style="display: none;">
-                    <p data-i18n="order.success">Спасибо за заказ, наш сотрудник свяжеться с вами в ближайший момент</p>
-                </div>
-            </form>
+
+                <form id="orderForm" class="order-modal-form">
+                    <div class="form-group">
+                        <label for="customerName" data-i18n="order.name">Ваше имя</label>
+                        <input type="text" id="customerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerPhone" data-i18n="order.phone">Телефон</label>
+                        <input type="tel" id="customerPhone" required>
+                    </div>
+                    <input type="hidden" id="productId" name="productId">
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn order-submit-btn" data-i18n="order.submit">Отправить заказ</button>
+                    </div>
+                    <div class="form-success-message" id="successMessage" style="display: none;">
+                        <p data-i18n="order.success">Спасибо за заказ, наш сотрудник свяжеться с вами в ближайший время</p>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -205,14 +223,14 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4 data-i18n="footer.contacts">Контакты</h4>
-                    <p>Email: <a href="mailto:info@perfume-premium.ru">info@perfume-premium.ru</a></p>
+                    <p>Email: <a href="mailto:info@perfume-premium.ru">annayew.begli@inbox.ru</a></p>
                     <p data-i18n="footer.phone">Телефон: <a href="tel:+99312345678">+99312345678</a></p>
                 </div>
-                <div class="footer-section">
+                <!-- <div class="footer-section">
                     <h4 data-i18n="footer.address">Адрес</h4>
                     <p>г Ашхгабад ул ____ д__</p>
                     <p data-i18n="footer.workingHours">Режим работы: Пн-Вс 10:00 - 22:00</p>
-                </div>
+                </div> -->
                 <div class="footer-section">
                     <h4 data-i18n="footer.social">Социальные сети</h4>
                     <div class="social-links">

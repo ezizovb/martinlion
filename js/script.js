@@ -3,192 +3,226 @@
 emailjs.init("8fzgorCZriaixUv9X");
 
 // Языковые настройки
-let currentLang = localStorage.getItem('language') || 'ru';
+let currentLang = localStorage.getItem("language") || "ru";
 
 const translations = {
-    ru: {
-        nav: {
-            about: "О нас",
-            howToOrder: "Как заказать",
-            catalog: "Каталоги"
-        },
-        banner: {
-            title1: "Изысканные ароматы для вас",
-            text1: "Откройте мир премиальной парфюмерии",
-            title2: "Уникальные композиции",
-            text2: "Каждый аромат рассказывает свою историю",
-            title3: "Премиальное качество",
-            text3: "Только оригинальная продукция от ведущих брендов"
-        },
-        about: {
-            text: "Мы предлагаем широкий ассортимент премиальной парфюмерии от ведущих мировых брендов. Наша коллекция включает как классические, так и современные ароматы для мужчин, женщин и унисекс варианты. Каждый продукт проходит тщательную проверку на подлинность, чтобы гарантировать вам только оригинальное качество."
-        },
-        howToOrder: {
-            title: "Как заказать",
-            subtitle: "Всего три простых шага к покупке:",
-            step1: {
-                title: "Нажмите «Заказать»",
-                text: "на понравившемся товаре."
-            },
-            step2: {
-                title: "Оставьте контакты.",
-                text: "В появившемся окне введите имя и телефон. Мы гарантируем конфиденциальность ваших данных."
-            },
-            step3: {
-                title: "Мы на связи!",
-                text: "Наш сотрудник перезвонит или напишет вам, чтобы подтвердить заказ и ответить на вопросы."
-            }
-        },
-        catalog: {
-            title: "Каталог",
-            searchPlaceholder: "Поиск по названию товара...",
-            filters: "Фильтры по категориям",
-            all: "Все",
-            male: "Мужской",
-            female: "Женский",
-            unisex: "Унисекс",
-            popularBrands: "Популярные бренды",
-            noProducts: "Товары не найдены"
-        },
-        order: {
-            title: "Оформление заказа",
-            name: "Ваше имя",
-            phone: "Телефон",
-            submit: "Отправить заказ",
-            success: "Спасибо за заказ, наш сотрудник свяжется с вами в ближайший момент"
-        },
-        product: {
-            order: "Заказать",
-            loadMore: "Загрузить еще"
-        },
-        footer: {
-            contacts: "Контакты",
-            phone: "Телефон:",
-            address: "Адрес",
-            workingHours: "Режим работы: Пн-Вс 10:00 - 22:00",
-            social: "Социальные сети",
-            rights: "Все права защищены."
-        }
+  ru: {
+    nav: {
+      about: "О нас",
+      howToOrder: "Как заказать",
+      catalog: "Каталоги",
     },
-    en: {
-        nav: {
-            about: "About Us",
-            howToOrder: "How to Order",
-            catalog: "Catalog"
-        },
-        banner: {
-            title1: "Exquisite Fragrances for You",
-            text1: "Discover the world of premium perfumery",
-            title2: "Unique Compositions",
-            text2: "Each fragrance tells its own story",
-            title3: "Premium Quality",
-            text3: "Only original products from leading brands"
-        },
-        about: {
-            text: "We offer a wide range of premium perfumery from leading world brands. Our collection includes both classic and modern fragrances for men, women, and unisex options. Each product undergoes thorough authenticity verification to guarantee you only original quality."
-        },
-        howToOrder: {
-            title: "How to Order",
-            subtitle: "Just three simple steps to purchase:",
-            step1: {
-                title: "Click 'Order'",
-                text: "on the product you like."
-            },
-            step2: {
-                title: "Leave your contacts.",
-                text: "In the pop-up window, enter your name and phone number. We guarantee the confidentiality of your data."
-            },
-            step3: {
-                title: "We're in touch!",
-                text: "Our employee will call or write to you to confirm the order and answer questions."
-            }
-        },
-        catalog: {
-            title: "Catalog",
-            searchPlaceholder: "Search by product name...",
-            filters: "Category Filters",
-            all: "All",
-            male: "Male",
-            female: "Female",
-            unisex: "Unisex",
-            popularBrands: "Popular Brands",
-            noProducts: "Products not found"
-        },
-        order: {
-            title: "Place Order",
-            name: "Your Name",
-            phone: "Phone",
-            submit: "Submit Order",
-            success: "Thank you for your order, our employee will contact you shortly"
-        },
-        product: {
-            order: "Order",
-            loadMore: "Load More"
-        },
-        footer: {
-            contacts: "Contacts",
-            phone: "Phone:",
-            address: "Address",
-            workingHours: "Working Hours: Mon-Sun 10:00 - 22:00",
-            social: "Social Networks",
-            rights: "All rights reserved."
-        }
-    }
+    banner: {
+      title1: "Изысканные ароматы для вас",
+      text1: "Откройте мир премиальной парфюмерии",
+      title2: "Уникальные композиции",
+      text2: "Каждый аромат рассказывает свою историю",
+      title3: "Премиальное качество",
+      text3: "Продукция от ведущих брендов",
+    },
+    about: {
+      text: "Мы подготовили специальную коллекцию ароматов, собирая различные ароматы из каждого уголка мира. Для обеспечение максимальн прочного аромата мы отстаивали запах в специальных цистернах, в течение длительного времени. Приготовьтесь испытать новый парфгом!",
+    },
+    howToOrder: {
+      title: "Как заказать",
+      subtitle: "Всего три простых шага к покупке:",
+      step1: {
+        title: "Нажмите «Заказать»",
+        text: "на понравившемся товаре.",
+      },
+      step2: {
+        title: "Оставьте контакты.",
+        text: "В появившемся окне введите имя и телефон. Мы гарантируем конфиденциальность ваших данных.",
+      },
+      step3: {
+        title: "Мы на связи!",
+        text: "Наш сотрудник перезвонит или напишет вам, чтобы подтвердить заказ и ответить на вопросы.",
+      },
+    },
+    catalog: {
+      title: "Каталог",
+      searchPlaceholder: "Поиск по названию товара...",
+      filters: "Фильтры по категориям",
+      all: "Все",
+      male: "Мужской",
+      female: "Женский",
+      unisex: "Унисекс",
+      popularBrands: "Популярные бренды",
+      noProducts: "Товары не найдены",
+    },
+    order: {
+      title: "Оформление заказа",
+      name: "Ваше имя",
+      phone: "Телефон",
+      submit: "Отправить заказ",
+      success:
+        "Спасибо за заказ, наш сотрудник свяжется с вами в ближайший момент",
+      description: {
+        before:
+          "Любимый аромат в новом исполнении. Мастерски воссозданная композиция, вдохновленная ",
+        after: ". Идентичные ноты, безупречная стойкость.",
+      },
+    },
+    product: {
+      order: "Заказать",
+      loadMore: "Загрузить еще",
+    },
+    footer: {
+      contacts: "Контакты",
+      phone: "Телефон: +993123456",
+      address: "Адрес",
+      workingHours: "Режим работы: Пн-Вс 10:00 - 22:00",
+      social: "Социальные сети",
+      rights: "Все права защищены.",
+    },
+  },
+  en: {
+    nav: {
+      about: "Biz barada",
+      howToOrder: "Nädip sargyt bermeli",
+      catalog: "Katalog",
+    },
+    banner: {
+      title1: "Siziň üçin nepis atyrlar",
+      text1: "Premium atyrlar dünýäsini açyň",
+      title2: "Üýtgeşik kompozisiýalar",
+      text2: "Her bir atyr öz hekaýasyny aýdýar",
+      title3: "Ýokary hilli",
+      text3: "Diňe öňdebaryjy brendlerden original önümler",
+    },
+    about: {
+      text: "Biz dünýäniň her bir künjeginden dürli ysly atyrları ýygnap, ýörite atyr kolleksiýasyny taýýarladyk. Ysynyň mümkin boldugyça uzak wagtlap saklanmagy üçin, atyrlar ýörite gaplarda uzak wagtlap saklandy. Täze parfýumy duýmana taýýar boluň!",
+    },
+    howToOrder: {
+      title: "Nädip sargyt bermeli",
+      subtitle: "Satyn almak üçin bary-ýogy üç ýönekeý ädim:",
+      step1: {
+        title: '"Sargyt et" düwmesine basyň',
+        text: "halaýan önümiňiziň üstünde.",
+      },
+      step2: {
+        title: "Habarlaşmak üçin maglumatlaryňyzy giriziň.",
+        text: "Açylan penjirede adyňyzy we telefon belgiňizi giriziň. Biz maglumatlaryňyzyň gizlinligini kepillendirýäris.",
+      },
+      step3: {
+        title: "Biz siziň bilen habarlaşarys!",
+        text: "Işgärimiz sargydy tassyklaýar we soraglaryňyza jogap bermek üçin size jaň eder ýa-da ýazar.",
+      },
+    },
+    catalog: {
+      title: "Katalog",
+      searchPlaceholder: "Önümiň ady boýunça gözleg...",
+      filters: "Kategoriýa süzgüçleri",
+      all: "Hemmesi",
+      male: "Erkekler üçin",
+      female: "Zenanlar üçin",
+      unisex: "Uniseks",
+      popularBrands: "Meşhur brendler",
+      noProducts: "Önüm tapylmady",
+    },
+    order: {
+      title: "Sargyt bermek",
+      name: "Siziň adyňyz",
+      phone: "Telefon:",
+      submit: "Sargydy iber",
+      success:
+        "Sargydyňyz üçin sag boluň, işgärimiz ýakyn wagtda siziň bilen habarlaşar",
+      description: {
+        before:
+          "Täze görnüşde söýgüli atyr. Ustalyk bilen döredilen kompozisiýa,  ",
+        after: ". -dan ylham alynyp. Deňi ýok notalar.",
+      },
+    },
+    product: {
+      order: "Sargyt et",
+      loadMore: "Has köp ýükle",
+    },
+    footer: {
+      contacts: "Habarlaşmak",
+      phone: "Telefon: +993123456",
+      address: "Salgy",
+      workingHours: "Iş wagty: Duş-Ýek 10:00 - 22:00",
+      social: "Sosial torlar",
+      rights: "Ähli hukuklar goralan.",
+    },
+  },
 };
 
 // Функция переключения языка
 function switchLanguage(lang) {
-    currentLang = lang;
-    localStorage.setItem('language', lang);
-    document.documentElement.lang = lang;
-    
-    // Обновляем текст переключателя
-    const langSwitchers = document.querySelectorAll('.lang-switcher');
-    langSwitchers.forEach(switcher => {
-        switcher.textContent = lang === 'ru' ? 'EN' : 'RU';
-    });
-    
-    // Обновляем все элементы с data-i18n
-    document.querySelectorAll('[data-i18n]').forEach(element => {
-        const key = element.getAttribute('data-i18n');
-        const keys = key.split('.');
-        let value = translations[lang];
-        for (const k of keys) {
-            value = value[k];
-        }
-        if (value) {
-            element.textContent = value;
-        }
-    });
-    
-    // Обновляем placeholder
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
-        const key = element.getAttribute('data-i18n-placeholder');
-        const keys = key.split('.');
-        let value = translations[lang];
-        for (const k of keys) {
-            value = value[k];
-        }
-        if (value) {
-            element.placeholder = value;
-        }
-    });
-    
-    // Обновляем динамически созданные элементы
-    updateDynamicContent();
+  currentLang = lang;
+  localStorage.setItem("language", lang);
+  document.documentElement.lang = lang;
+
+  // Обновляем текст переключателя
+  const langSwitchers = document.querySelectorAll(".lang-switcher");
+  langSwitchers.forEach((switcher) => {
+    switcher.textContent = lang === "ru" ? "TM" : "RU";
+  });
+
+  // Обновляем все элементы с data-i18n
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.getAttribute("data-i18n");
+    const keys = key.split(".");
+    let value = translations[lang];
+    for (const k of keys) {
+      value = value[k];
+    }
+    if (value) {
+      element.textContent = value;
+    }
+  });
+
+  // Обновляем placeholder
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+    const key = element.getAttribute("data-i18n-placeholder");
+    const keys = key.split(".");
+    let value = translations[lang];
+    for (const k of keys) {
+      value = value[k];
+    }
+    if (value) {
+      element.placeholder = value;
+    }
+  });
+
+  // Обновляем динамически созданные элементы
+  updateDynamicContent();
+
+  // Обновляем описание в модальном окне заказа
+  updateOrderModalDescription();
 }
 
 // Обновление динамического контента
 function updateDynamicContent() {
-    const orderBtns = document.querySelectorAll('.order-btn');
-    orderBtns.forEach(btn => {
-        btn.textContent = translations[currentLang].product.order;
-    });
-    
-    const loadMoreBtn = document.getElementById('loadMoreBtn');
-    if (loadMoreBtn) {
-        loadMoreBtn.textContent = translations[currentLang].product.loadMore;
-    }
+  const orderBtns = document.querySelectorAll(".order-btn");
+  orderBtns.forEach((btn) => {
+    btn.textContent = translations[currentLang].product.order;
+  });
+
+  const loadMoreBtn = document.getElementById("loadMoreBtn");
+  if (loadMoreBtn) {
+    loadMoreBtn.textContent = translations[currentLang].product.loadMore;
+  }
+}
+
+// Обновление описания в модальном окне заказа
+function updateOrderModalDescription() {
+  const descriptionElement = document.querySelector(
+    ".order-modal-description p",
+  );
+  const productNameElement = document.getElementById("orderProductName");
+
+  if (descriptionElement && productNameElement) {
+    const productName = productNameElement.textContent;
+    const translations_obj = translations[currentLang].order.description;
+
+    // Обновляем текст, сохраняя имя товара
+    descriptionElement.innerHTML =
+      translations_obj.before +
+      `<span class="order-modal-product-name" id="orderProductName">${productName}</span>` +
+      translations_obj.after;
+  }
 }
 
 // Данные
@@ -433,9 +467,51 @@ function updateFilterButtons() {
   });
 }
 
+// Изображения для модального окна по категориям
+// Замените пути на ваши изображения для каждой категории
+const orderModalImages = {
+  male: "./martinlion_male.png", // Изображение для мужской категории
+  female: "./martinlion_female.png", // Изображение для женской категории
+  unisex: "./martinlion_unisex.png", // Изображение для унисекс категории
+};
+
 // Открытие модального окна заказа
 function openOrderModal(product) {
   document.getElementById("productId").value = product.id;
+
+  // Устанавливаем имя товара и обновляем описание
+  const productNameElement = document.getElementById("orderProductName");
+  const descriptionElement = document.querySelector(
+    ".order-modal-description p",
+  );
+
+  if (productNameElement && descriptionElement) {
+    const translations_obj = translations[currentLang].order.description;
+    productNameElement.textContent = product.name;
+
+    // Обновляем текст описания с учетом текущего языка
+    descriptionElement.innerHTML =
+      translations_obj.before +
+      `<span class="order-modal-product-name" id="orderProductName">${product.name}</span>` +
+      translations_obj.after;
+  }
+
+  // Устанавливаем изображение в зависимости от категории
+  const productImageElement = document.getElementById("orderProductImage");
+  if (productImageElement) {
+    const imagePath =
+      orderModalImages[product.category] || orderModalImages.male; // Fallback на male если категория не найдена
+    productImageElement.src = imagePath;
+    productImageElement.alt = product.name;
+
+    // Обработка ошибки загрузки изображения
+    productImageElement.onerror = function () {
+      console.warn(
+        `Изображение не найдено: ${imagePath}. Пожалуйста, добавьте изображение для категории "${product.category}"`,
+      );
+    };
+  }
+
   orderModal.classList.add("active");
   document.body.style.overflow = "hidden";
   // Скрываем сообщение об успехе при открытии
@@ -498,16 +574,16 @@ async function submitOrder(event) {
       successMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
     }
 
-    // Закрываем модальное окно через 3 секунды
+    // Закрываем модальное окно через 9 секунды
     setTimeout(() => {
       closeOrderModal();
-    }, 3000);
+    }, 9000);
   } catch (error) {
     console.error("Ошибка отправки:", error);
     alert(
-      currentLang === 'ru' 
+      currentLang === "ru"
         ? "Произошла ошибка при отправке заказа. Пожалуйста, попробуйте позже или свяжитесь с нами напрямую."
-        : "An error occurred while submitting the order. Please try again later or contact us directly.",
+        : "Sargydyňyzy ibermekde näsazlyk ýüze çykdy.   Soňra ýene synanyşyň ýa-da göni bize ýüz tutuň.",
     );
   }
 }
@@ -638,14 +714,14 @@ const mobileLangSwitcher = document.getElementById("mobileLangSwitcher");
 
 if (langSwitcher) {
   langSwitcher.addEventListener("click", () => {
-    const newLang = currentLang === 'ru' ? 'en' : 'ru';
+    const newLang = currentLang === "ru" ? "en" : "ru";
     switchLanguage(newLang);
   });
 }
 
 if (mobileLangSwitcher) {
   mobileLangSwitcher.addEventListener("click", () => {
-    const newLang = currentLang === 'ru' ? 'en' : 'ru';
+    const newLang = currentLang === "ru" ? "en" : "ru";
     switchLanguage(newLang);
   });
 }
