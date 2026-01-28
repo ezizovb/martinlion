@@ -15,7 +15,8 @@
       "brand": "Burrberry",
       "category": "male",
       "description": "Citrus - Spicy | Bergomot, Mint, Thyme, Nutmeg",
-      "image": "./images/burberry-classic.jpg"
+      "image": "./images/burberry-classic.jpg",
+      "price:" : 150
     },
     {
       "id": "H02",

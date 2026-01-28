@@ -69,7 +69,7 @@ const translations = {
     },
     footer: {
       contacts: "Контакты",
-      phone: "Телефон: +993123456",
+      phone: "Телефон: +993(64)374964",
       address: "Адрес",
       workingHours: "Режим работы: Пн-Вс 10:00 - 22:00",
       social: "Социальные сети",
@@ -91,7 +91,7 @@ const translations = {
       text3: "Diňe öňdebaryjy brendlerden original önümler",
     },
     about: {
-      text: "Biz dünýäniň her bir künjeginden dürli ysly atyrları ýygnap, ýörite atyr kolleksiýasyny taýýarladyk. Ysynyň mümkin boldugyça uzak wagtlap saklanmagy üçin, atyrlar ýörite gaplarda uzak wagtlap saklandy. Täze parfýumy duýmana taýýar boluň!",
+      text: "Biz dünýäniň her bir künjeginden dürli ysly atyrlary ýygnap, ýörite atyr kolleksiýasyny taýýarladyk. Ysynyň mümkin boldugyça uzak wagtlap saklanmagy üçin, atyrlar ýörite gaplarda uzak wagtlap saklandy. Täze parfýumy duýmana taýýar boluň!",
     },
     howToOrder: {
       title: "Nädip sargyt bermeli",
@@ -139,7 +139,7 @@ const translations = {
     },
     footer: {
       contacts: "Habarlaşmak",
-      phone: "Telefon: +993123456",
+      phone: "Telefon: +993(64)374964",
       address: "Salgy",
       workingHours: "Iş wagty: Duş-Ýek 10:00 - 22:00",
       social: "Sosial torlar",
@@ -391,6 +391,15 @@ function createProductCard(product) {
   description.className = "product-description";
   description.textContent = product.description;
 
+  // Цена товара
+  const priceValue =
+    typeof product.price === "number" && !isNaN(product.price)
+      ? product.price
+      : 150;
+  const price = document.createElement("div");
+  price.className = "product-price";
+  price.textContent = `${priceValue} TMT`;
+
   const orderBtn = document.createElement("button");
   orderBtn.className = "order-btn";
   orderBtn.textContent = translations[currentLang].product.order;
@@ -399,6 +408,7 @@ function createProductCard(product) {
   info.appendChild(name);
   info.appendChild(id);
   info.appendChild(description);
+  info.appendChild(price);
   info.appendChild(orderBtn);
 
   card.appendChild(image);

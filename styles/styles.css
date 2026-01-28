@@ -1,10 +1,11 @@
 @font-face {
-  font-family: 'Montserrat-Variable';
-  src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('woff');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'Montserrat-Variable';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
+
 /* Reset & Base Styles */
 * {
     margin: 0;
@@ -77,7 +78,7 @@ body {
     color: var(--accent-color);
 }
 
-.brand{
+.brand {
     font-family: Montserrat-Variable, sans-serif;
     display: flex;
     justify-content: center;
@@ -242,8 +243,8 @@ body {
     background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
 }
 
-.banner{
-        font-family: Montserrat-Variable, sans-serif;
+.banner {
+    font-family: Montserrat-Variable, sans-serif;
 }
 
 .banner-slider {
@@ -657,6 +658,13 @@ body {
     line-height: 1.6;
 }
 
+.product-price {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 16px;
+}
+
 .order-btn {
     width: 100%;
     padding: 12px 20px;
@@ -958,10 +966,12 @@ body {
     color: var(--text-light);
     font-size: 14px;
 }
+
 .author {
     margin-left: auto;
 }
-.author a{
+
+.author a {
     color: var(--accent-color);
     font-weight: 200;
     font-size: small;
