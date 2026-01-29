@@ -69,7 +69,7 @@ const translations = {
     },
     footer: {
       contacts: "Контакты",
-      phone: "Телефон: +993(64)374964",
+      //   phone: "Телефон: +993(64)374964",
       address: "Адрес",
       workingHours: "Режим работы: Пн-Вс 10:00 - 22:00",
       social: "Социальные сети",
@@ -139,7 +139,7 @@ const translations = {
     },
     footer: {
       contacts: "Habarlaşmak",
-      phone: "Telefon: +993(64)374964",
+      //   phone: "Telefon: +993(64)374964",
       address: "Salgy",
       workingHours: "Iş wagty: Duş-Ýek 10:00 - 22:00",
       social: "Sosial torlar",
